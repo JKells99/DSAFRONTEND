@@ -6,23 +6,26 @@
     <title>Add Numbers</title>
     
 </head>
-<body>
-    <header>
-        <a href="./index.html">Home</a>
+<body class="bg-gray-700  ">
+    <header class="p-5">
+        <a class="text-blue-300 text-3xl hover:underline    " href="./index.html">Home</a>
     </header>
 
     
-    
-    <input type="text" id="input">
-    <button onclick="postNumbers()" id="submitButton">Submit Numbers</button>
-    <button id="getPrevTrees">Get Previous</button>
-    
+    <div class="form flex flex-col ">
+        <input class="bg-gray-50 border border-white-400 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="input">
+        <button class="text-blue-300 text-3xl pt-3" onclick="postNumbers()" id="submitButton">Submit Numbers</button>
+        <button class="text-blue-300 text-3xl p-4" id="getPrevTrees">Get Previous</button>
+    </div>
+   
 
-    <div class="response">
+    <div class="response text-blue-300" >
 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <script>
           document.getElementById('submitButton').addEventListener('click', function() {
